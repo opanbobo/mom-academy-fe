@@ -10,7 +10,12 @@
     <!-- Place favicon.ico in the root directory -->
     <!-- build:css styles/vendor.css -->
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="/node_modules/slick-carousel/slick/slick.css" type="text/css" />
+    <link rel="stylesheet" href="/node_modules/wow.js/libs/animate.css" type="text/css" />
     <!-- endbuild -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -22,46 +27,168 @@
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills float-right">
-          <li class="nav-item">
-            <a href="#" class="nav-link active">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
-          </li>
-        </ul>
-        <h3 class="text-muted">mom academy fe</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1 class="display-3">'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
+    <div id="wrapper">
+      <div id="top-desktop">
+        <div class="orange-top">
+          <div class="container">
+            <div class="row justify-content-end">
+              <div class="col-md-6">
+                <div class="d-flex justify-content-end align-items-center">
+                  <div class="user pr-2"><a href="#"><img src="images/ico-user.png" alt="" class="img-fluid"></a></div>
+                  <div class="act-link pr-2 text-center"><a href="#">Join MoM</a></div>
+                  <form class="searchbar">
+                    <input type="search" placeholder="Search here" name="search" class="searchbar-input" onkeyup="buttonUp();" required> 
+                    <input type="submit" class="searchbar-submit" value="GO"> 
+                    <span class="searchbar-icon"><i class="fa fa-search" aria-hidden="true"></i></span> 
+                  </form>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+        <div class="after-orange-top">
+          <div class="container">
+            <div class="top-wrapper d-flex py-3">
+              <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" class="img-fluid"></a></div>
+              <div class="menus d-flex align-items-center">
+                <ul>
+                  <li class="mr-4"><a href="">The Academy</a></li>
+                  <li class="mr-4"><a href="">Get Income</a></li>
+                  <li class="mr-4"><a href="">Events</a></li>
+                  <li class="mr-4"><a href="">Market Day</a></li>
+                  <li class="mr-0"><a href="">About MoM</a></li>
+                </ul>
+              </div>
+            </div>            
+          </div>
         </div>
       </div>
-
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
+      <div id="top-mobile"></div>
+      <div id="about" class="section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="block p-3 rounded my-5">
+                <h1 class="title mb-4">About <span class="d-block">Mom Academy</span></h1>
+                <div class="shortdesc">
+                  <p class="mb-0">MoM Academy (MoMA) adalah komunitas perempuan terutama para mom yang senang mencari ilmu, berbagi ilmu, serta pastinya mendapatkan penghasilan. Dengan misi “ Mom harus pintar, produktif, dan bahagia” komunitas di bawah naungan Mothers on Mission ini berkembang pesat hanya dalam satu tahun terakhir.</p>
+                  <p class="mb-0">Saat ini MoMA sudah memiliki lebih dari 3000 anggota yang tersebar di seluruh Indonesia serta Luar Negeri dan terbagi dalam 15 whatsapp group yang dikelola oleh para pengurus regional masing-masing area.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="academy" class="section py-5">
+        <div class="container">
+          <h1 class="title">The Academy</h1>
+          <div class="column mb-5">
+            <h4 class="text-center mb-4">Class</h4>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="block">
+                  <div class="block-col position-relative">
+                    <div class="img"><a href="detail-class.html" class="thumb-video position-relative"><img src="images/img-class-1.png" alt="" class="img-fluid"></a></div>
+                    <div class="block-text w-100 p-3">
+                      <div class="date text-white text-center font-weight-bold d-flex align-items-center justify-content-center flex-column">26 <span class="text-uppercase font-weight-normal">apr</span></div>
+                      <h6><a href="detail-class.html">Content Marketing to Grow Your Business</a></h6>
+                      <div class="column">
+                        <div class="author">By Widya Safitri</div>
+                        <div class="btn-act text-center">
+                          <a href="#" class="free rounded-pill text-white mb-2 text-uppercase p-1">Free</a>
+                          <a href="#" class="daftar rounded-pill text-white text-uppercase p-1">Daftar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>       
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="block">
+                  <div class="block-col position-relative">
+                    <div class="img"><a href="detail-class.html" class="position-relative"><img src="images/img-class-2.png" alt="" class="img-fluid"></a></div>
+                    <div class="block-text w-100 p-3">
+                      <div class="date text-white text-center font-weight-bold d-flex align-items-center justify-content-center flex-column">26 <span class="text-uppercase font-weight-normal">apr</span></div>
+                      <h6><a href="detail-class.html">Content Marketing to Grow Your Business</a></h6>
+                      <div class="column">
+                        <div class="author">By Widya Safitri</div>
+                        <div class="btn-act text-center">
+                          <a href="#" class="free rounded-pill text-white mb-2 text-uppercase p-1">Free</a>
+                          <a href="#" class="daftar rounded-pill text-white text-uppercase p-1">Daftar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>       
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="block">
+                  <div class="block-col position-relative">
+                    <div class="img"><a href="detail-class.html" class="thumb-video position-relative"><img src="images/img-class-3.png" alt="" class="img-fluid"></a></div>
+                    <div class="block-text w-100 p-3">
+                      <div class="date text-white text-center font-weight-bold d-flex align-items-center justify-content-center flex-column">26 <span class="text-uppercase font-weight-normal">apr</span></div>
+                      <h6><a href="detail-class.html">Content Marketing to Grow Your Business</a></h6>
+                      <div class="column">
+                        <div class="author">By Widya Safitri</div>
+                        <div class="btn-act text-center">
+                          <a href="#" class="free rounded-pill text-white mb-2 text-uppercase p-1">Free</a>
+                          <a href="#" class="daftar rounded-pill text-white text-uppercase p-1">Daftar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>       
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column mb-5">
+            <h4 class="text-center mb-4">Module</h4>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="block">
+                  <div class="block-module bg-orange">
+                    <div class="img"><a href="detail-module.html" class="position-relative"><img src="images/img-module.png" alt="" class="img-fluid"></a></div>
+                    <div class="block-text w-100 p-3">
+                      <h6 class="mb-4"><a href="detail-module.html">MEMBUAT POT GANTUNG MACRAME</a></h6>
+                      <div class="btn-act">
+                        <a href="#" class="rounded-pill mb-2 text-uppercase">Free</a>
+                        <a href="#" class="rounded-pill text-uppercase">Lihat</a>
+                      </div>
+                    </div>
+                  </div>       
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="block">
+                  <div class="block-module bg-yellow">
+                    <div class="img"><a href="detail-module.html" class="position-relative"><img src="images/img-module.png" alt="" class="img-fluid"></a></div>
+                    <div class="block-text w-100 p-3">
+                      <h6 class="mb-4"><a href="detail-module.html">MEMBUAT POT GANTUNG MACRAME</a></h6>
+                      <div class="btn-act">
+                        <a href="#" class="rounded-pill mb-2 text-uppercase">Free</a>
+                        <a href="#" class="rounded-pill text-uppercase">Lihat</a>
+                      </div>
+                    </div>
+                  </div>       
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="block">
+                  <div class="block-module bg-blue">
+                    <div class="img"><a href="detail-module.html" class="position-relative"><img src="images/img-module.png" alt="" class="img-fluid"></a></div>
+                    <div class="block-text w-100 p-3">
+                      <h6 class="mb-4"><a href="detail-module.html">MEMBUAT POT GANTUNG MACRAME</a></h6>
+                      <div class="btn-act">
+                        <a href="#" class="rounded-pill mb-2 text-uppercase">Free</a>
+                        <a href="#" class="rounded-pill text-uppercase">Lihat</a>
+                      </div>
+                    </div>
+                  </div>       
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -75,7 +202,12 @@
     </script>
     <!-- build:js scripts/vendor.js -->
     <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>    
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+    <script type="text/javascript" src="/node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/node_modules/wow.js/dist/wow.min.js"></script>
     <!-- endbuild -->
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
