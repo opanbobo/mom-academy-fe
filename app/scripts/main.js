@@ -34,6 +34,15 @@ $(document).ready(function() {
     slidesToShow: 4,
     slidesToScroll: 1
   });
+
+  $('.multiple-items-2').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1
+  });
+
+
+
 });
 
 
