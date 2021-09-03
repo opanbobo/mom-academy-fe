@@ -8,6 +8,10 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
+.form-control-plaintext{
+  outline: none;
+}
+
 #top-desktop{
   @media screen and (max-width:768px) {
     display: none;
@@ -120,7 +124,7 @@ body{
           color: $orange;
           text-decoration: none;
           &:hover{
-            color: #f8ab34;
+            color: #72555c;
           }
         }
       }
@@ -306,6 +310,55 @@ body{
   .headline{
     font-weight: 700;
     font-size: 50px;
+  }
+  .block{
+    .after-img{
+      .more{
+        font-size: 15px;
+        a{
+          text-decoration: none;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+#behind-mom{
+  background: url(../images/blue-shape.jpg) no-repeat;
+  background-size: cover;
+  .shortdesc{
+    font-size: 23px;
+    line-height: 1.2;
+  }
+  .moreknow{
+    font-size: 24px;
+    a{
+      width: 310px;
+      height: 75px;
+    }
+  }
+  .sliders-wrapper{
+    .slick-prev {
+      display: none !important;
+    }
+    .slick-next{
+      position: absolute;
+      right: -50px;
+      top: 50%;
+      background: url(../images/arrow-expert.png) no-repeat;
+      text-indent: -9999px;
+      padding: 0;
+      width: 52px;
+      height: 52px;
+      border: none;
+      box-shadow: none;
+    }
+  }
+  
+  .headline{
+    font-weight: 700;
+    font-size: 40px;
   }
   .block{
     .after-img{
@@ -559,6 +612,14 @@ body{
         font-style: italic;
         span{
           font-style: normal;
+        }
+      }
+      .user{
+        overflow: hidden;
+        width: 160px;
+        height: 176px;
+        img{
+          object-fit: cover;
         }
       }
     }
