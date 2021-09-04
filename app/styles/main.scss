@@ -138,6 +138,9 @@ body{
       font-size: 52px;
       font-weight: 700;
       color: $orange;
+      @include media-breakpoint-down(xs){
+        font-size: 36px;
+      }
     }
   }
 }
@@ -145,6 +148,11 @@ body{
 
 #about{
   background: url(../images/banner-about.png) no-repeat;
+  @include media-breakpoint-down(sm){
+    background-color: #fff4cf;
+    background-size: cover;
+    background-position: 30% 50px;
+  }
   .block{
     background: rgba(255, 255, 255, 0.88);
   }
@@ -152,19 +160,48 @@ body{
 
 #academy{
   background: #fff4cf;
-  
   h4{
     color: $orange;
     font-size: 40px;
     font-weight: 700;
+    @include media-breakpoint-down(xs){
+     text-align: left !important;
+     font-size: 28px; 
+    }
   }
   .column{
     .block{
       display: block;
+      @include media-breakpoint-down(xs){
+        margin-bottom: 20px;
+      }
       .block-module{
         height: 300px;
         overflow: hidden;
         border-radius: 15px;
+        @include media-breakpoint-down(xs){
+          height: 250px;
+        }
+        .img{
+          a{
+            display: block;
+            height: 100%;
+            &::before{
+              @include media-breakpoint-down(xs){
+                background: rgba(0, 0, 0, 0.45);
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+              }
+            }
+            .title-mobile{
+              bottom: 0;
+              font-size: 23px;
+            }
+          }
+        }
         h6{
           font-size: 23px;
           font-weight: 700;
@@ -173,10 +210,17 @@ body{
             text-decoration: none;
             &:hover{
               color: #f4f3f2;
-            }
+            }            
           }
         }
         .btn-act{
+          @include media-breakpoint-down(xs){
+            width: 100%;
+            flex-direction: row;
+            align-items: center;
+            height: 50px;
+            display: flex;
+          }
           a{
             background: #fff;
             color: $orange;
@@ -188,6 +232,14 @@ body{
             margin-right: 20px;
             text-decoration: none;
             padding: 2px;
+            @include media-breakpoint-down(xs){
+              width: 48%;
+              margin-bottom: 0 !important;
+              height: 40px;
+              align-items: center;
+              display: flex;
+              justify-content: center;
+            }
             &:last-child{
               margin-right: 0;
             }
@@ -207,9 +259,22 @@ body{
         height: 387px;
         overflow: hidden;
         border-radius: 15px;
+        @include media-breakpoint-down(xs){
+          height: 270px;
+        }
         .img{
           a{
             display: block;
+            &::before{
+              @include media-breakpoint-down(xs){
+                background: rgba(0, 0, 0, 0.45);
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+              }
+            }
             &.thumb-video{
               &::before{
                 background: rgba(0, 0, 0, 0.45) url(../images/btn-play.png) no-repeat center 35%;
@@ -218,6 +283,16 @@ body{
                 width: 100%;
                 height: 100%;
                 top: 0;
+                @include media-breakpoint-down(xs){
+                  background-image: none;
+                }
+              }
+            }
+            .floating-txt{
+              top: 20%;
+              h6{
+                font-size: 23px;
+                font-weight: 700;
               }
             }
           }
@@ -227,6 +302,9 @@ body{
           height: 50%;
           bottom: 0;
           background: rgba(244, 243, 242, 0.9);
+          @include media-breakpoint-down(xs){
+            height: 30%;
+          }
           .date{
             background: #f8ab34;
             position: absolute;
@@ -236,6 +314,15 @@ body{
             font-size: 23px;
             line-height: 30px;
             top: -50px;
+            @include media-breakpoint-down(xs){
+              top: -175px;
+              right: 20px;
+              width: 60px;
+              height: 60px;
+              border-radius: 10px;
+              font-size: 18px;
+              line-height: 20px;
+            }
           }
           h6{
             color: $orange;
@@ -262,6 +349,24 @@ body{
               display: flex;
               font-size: 15px;
               font-weight: 700;
+              @include media-breakpoint-down(xs){
+                width: 100%;
+                flex-direction: row;
+                align-items: center;
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+              }
+              a{
+                @include media-breakpoint-down(xs){
+                  width: 48%;
+                  margin-bottom: 0 !important;
+                  height: 40px;
+                  align-items: center;
+                  display: flex;
+                  justify-content: center;
+                }
+              }
               .free{
                 background: $orange;
                 text-decoration: none;
@@ -291,7 +396,24 @@ body{
   background-size: cover;
   .sliders-wrapper{
     .slick-prev {
-      display: none !important;
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      background: url(../images/arrow-expert.png) no-repeat;
+      text-indent: -9999px;
+      padding: 0;
+      width: 52px;
+      height: 52px;
+      border: none;
+      box-shadow: none;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      z-index: 9;
+      @include media-breakpoint-up(md){
+        display: none;
+      }
     }
     .slick-next{
       position: absolute;
@@ -304,6 +426,9 @@ body{
       height: 52px;
       border: none;
       box-shadow: none;
+      @include media-breakpoint-down(xs){
+        right: 0;
+      }
     }
   }
   
@@ -340,7 +465,24 @@ body{
   }
   .sliders-wrapper{
     .slick-prev {
-      display: none !important;
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      background: url(../images/arrow-expert.png) no-repeat;
+      text-indent: -9999px;
+      padding: 0;
+      width: 52px;
+      height: 52px;
+      border: none;
+      box-shadow: none;
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      z-index: 9;
+      @include media-breakpoint-up(md){
+        display: none;
+      }
     }
     .slick-next{
       position: absolute;
@@ -353,6 +495,9 @@ body{
       height: 52px;
       border: none;
       box-shadow: none;
+      @include media-breakpoint-down(xs){
+        right: 0;
+      }
     }
   }
   
@@ -378,13 +523,29 @@ body{
   .column{
     .block{
       display: block;
+      @include media-breakpoint-down(xs){
+        margin-bottom: 20px;
+      }
       .block-col{
         height: 387px;
         overflow: hidden;
         border-radius: 15px;
+        @include media-breakpoint-down(xs){
+          height: 270px;
+        }
         .img{
           a{
             display: block;
+            &::before{
+              @include media-breakpoint-down(xs){
+                background: rgba(0, 0, 0, 0.45);
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+              }
+            }
             &.thumb-video{
               &::before{
                 background: rgba(0, 0, 0, 0.45) url(../images/btn-play.png) no-repeat center 35%;
@@ -395,6 +556,13 @@ body{
                 top: 0;
               }
             }
+            .floating-txt{
+              top: 20%;
+              h6{
+                font-size: 23px;
+                font-weight: 700;
+              }
+            }
           }
         }
         .block-text{
@@ -402,6 +570,9 @@ body{
           height: 50%;
           bottom: 0;
           background: rgba(244, 243, 242, 0.9);
+          @include media-breakpoint-down(xs){
+            height: 30%;
+          }
           .date{
             background: #3ea2d3;
             position: absolute;
@@ -411,6 +582,15 @@ body{
             font-size: 23px;
             line-height: 30px;
             top: -50px;
+            @include media-breakpoint-down(xs){
+              top: -175px;
+              right: 20px;
+              width: 60px;
+              height: 60px;
+              border-radius: 10px;
+              font-size: 18px;
+              line-height: 20px;
+            }
           }
           h6{
             color: $orange;
@@ -437,6 +617,24 @@ body{
               display: flex;
               font-size: 15px;
               font-weight: 700;
+              @include media-breakpoint-down(xs){
+                width: 100%;
+                flex-direction: row;
+                align-items: center;
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+              }
+              a{
+                @include media-breakpoint-down(xs){
+                  width: 48%;
+                  margin-bottom: 0 !important;
+                  height: 40px;
+                  align-items: center;
+                  display: flex;
+                  justify-content: center;
+                }
+              }
               .free{
                 background: #f267ab;
                 text-decoration: none;
@@ -461,6 +659,9 @@ body{
   }
 }
 
+.bg-transparant{
+  background-color: transparent !important;
+}
 
 #market{
   background: #f4a720;
@@ -468,9 +669,47 @@ body{
     font-size: 40px;
     font-weight: 700;
   }
+  #pills-tab{
+    li{
+      position: relative;
+      @include media-breakpoint-down(xs){
+        font-size: 14px;
+      }
+      a{
+        &.active{
+          &::before{
+            position: absolute;
+            content: '';
+            width: 20%;
+            height: 3px;
+            background-color: #fff;
+            bottom: 0px;
+            left: 0;
+            right: 0;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+  #pills-tabContent{
+    .block-col{
+      height: 353px;
+      overflow: hidden;
+      border-radius: 20px;        
+      .block-text{
+        h6{
+          padding-top: 0 !important;
+        }
+      }
+    }
+  }
   .shortdesc{
     p{
       font-size: 28px;
+      @include media-breakpoint-down(xs){
+        font-size: 18px;
+      }
     }
   }
   .mt-85{
@@ -490,7 +729,7 @@ body{
     }
   }
   .block{
-    display: block;
+    display: block;    
     &.product-off-the-day{
       .block-col{
         height: 453px;
@@ -602,14 +841,53 @@ body{
       }
     }
   }
+  .mobile-tabs{
+    #testi-tab{
+      li{
+        position: relative;
+        a{
+          &.active{
+            &::before{
+              position: absolute;
+              content: '';
+              width: 20%;
+              height: 3px;
+              background-color: #fff;
+              bottom: 0px;
+              left: 0;
+              right: 0;
+              margin: auto;
+            }
+          }
+        }
+      }
+    }
+    .tab-pane{
+      .button{
+        a{
+          text-decoration: none;
+          width: 319px;
+          height: 76px;
+        }
+      }
+    }
+  }
   .testimonial-wrapper{
     background: url(../images/border-pink.png) no-repeat top center;
     padding-top: 50px;
+    @include media-breakpoint-down(xs){
+      padding-top: 0;
+      background: transparent;
+    }
     .testi-block{
       .testi{
         font-size: 30px;
         line-height: 35px;
         font-style: italic;
+        @include media-breakpoint-down(xs){
+          font-size: 22px;
+          line-height: 30px;
+        }
         span{
           font-style: normal;
         }
@@ -618,6 +896,13 @@ body{
         overflow: hidden;
         width: 160px;
         height: 176px;
+        @include media-breakpoint-down(xs){
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          width: 108px;
+        }
         img{
           object-fit: cover;
         }
@@ -648,6 +933,9 @@ body{
       height: 58px;
       border: none;
       box-shadow: none;
+      @include media-breakpoint-down(xs){
+        display: none;
+      }
     }
   }
   .block{
