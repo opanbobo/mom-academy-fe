@@ -8,6 +8,10 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
+#wrapper{
+  overflow: hidden;
+}
+
 .form-control-plaintext{
   outline: none;
 }
@@ -32,6 +36,55 @@ body{
     background-position: right center; /* change the direction of the change here */
     color: #fff;
     text-decoration: none;        
+  }
+}
+
+.form-popup{
+  .wrapper-oblock{
+    &::before{
+      position: absolute;
+      content: '';
+      width: 50%;
+      height: 1px;
+      background-color: #000;
+      top: 50%;
+      left: 0;
+    }
+    &::after{
+      position: absolute;
+      content: '';
+      width: 50%;
+      height: 1px;
+      background-color: #000;
+      top: 50%;
+      right: 0;
+    }
+    .oblock{
+      background: #fff;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  form{
+    .form-group{
+      input{
+        background-color: whitesmoke;
+        border: none;
+        padding: 25px 20px;
+        border-radius: 10px;
+      }
+      span{
+        color: $orange;
+      }
+    }
+    .btn-submit-popup{
+      background: $orange;
+      border-radius: 15px;
+      @include media-breakpoint-up(md){
+        height: 60px;
+      }
+    }
   }
 }
 

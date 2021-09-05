@@ -35,8 +35,8 @@
             <div class="row justify-content-end">
               <div class="col-md-6">
                 <div class="d-flex justify-content-end align-items-center">
-                  <div class="user pr-2"><a href="#"><img src="images/ico-user.png" alt="" class="img-fluid"></a></div>
-                  <div class="act-link pr-2 text-center"><a href="#">Join MoM</a></div>
+                  <div class="user pr-2"><a data-dismiss="modal" data-toggle="modal" href="#modalLogin"><img src="images/ico-user.png" alt="" class="img-fluid"></a></div>
+                  <div class="act-link pr-2 text-center"><a data-toggle="modal" data-target="#modalRegist">Join MoM</a></div>
                   <form class="searchbar">
                     <input type="search" placeholder="Search here" name="search" class="searchbar-input" onkeyup="buttonUp();" required> 
                     <input type="submit" class="searchbar-submit" value="GO"> 
@@ -896,6 +896,110 @@
         </div>        
       </div>
     </div>
+
+    <!-- Modal Regist -->
+    <div class="modal fade form-popup" id="modalRegist">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <div class="text-center w-100"><img src="images/logo.png" alt="" class="img-fluid"></div>
+          </div>
+          <div class="modal-body px-md-5">
+            <h4 class="title">Login</h4>
+            <div class="sso mb-3"><img src="images/btn-fb.png" alt="" class="img-fluid"></div>
+            <div class="sso mb-3"><img src="images/btn-google.png" alt="" class="img-fluid"></div>
+            <div class="wrapper-oblock position-relative text-center mb-3">
+              <div class="oblock px-3">atau</div>
+            </div>
+            <form action="" class="form-regist">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Username">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nama Depan">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nama Belakang">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Alamat Email">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nomor Ponsel">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="*Konfirmasi Password">
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    Saya telah <span>membaca dan mengerti</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck2">
+                  <label class="form-check-label" for="gridCheck2">
+                    Saya menerima <span>kebijakan privasi</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck3">
+                  <label class="form-check-label" for="gridCheck3">
+                    Saya tertarik mendapatkan kabar, informasi, diskon dari Mothers on Mission
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <button class="text-uppercase text-white font-weight-bold border-0 w-100 btn-submit-popup" type="submit">Daftar sekarang</button>
+              </div>
+              <div class="form-group">
+                <div data-dismiss="modal" data-toggle="modal" href="#modalLogin">Sudah punya akun? Masuk</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Modal Login -->
+    <div class="modal fade form-popup pb-5" id="modalLogin" >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <div class="text-center w-100"><img src="images/logo.png" alt="" class="img-fluid"></div>
+          </div>
+          <div class="modal-body px-md-5">
+            <h4 class="title">Login</h4>
+            <div class="sso mb-3"><img src="images/btn-fb.png" alt="" class="img-fluid"></div>
+            <div class="sso mb-3"><img src="images/btn-google.png" alt="" class="img-fluid"></div>
+            <div class="wrapper-oblock position-relative text-center mb-3">
+              <div class="oblock px-3">atau</div>
+            </div>
+            <form action="" class="form-regist">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email or Phone Number">
+              </div>
+              <div class="form-group">
+                <button class="text-uppercase text-white font-weight-bold border-0 w-100 btn-submit-popup" type="submit">Next</button>
+              </div>
+              <div class="form-group">
+                <div class="" data-dismiss="modal" data-toggle="modal" href="#modalRegist">Belum punya akun? Yuk Daftar</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
