@@ -39,6 +39,24 @@ body{
   }
 }
 
+.bg-orange{
+  background: $orange;
+}
+.bg-yellow{
+  background: #f8ab34;
+}
+.bg-blue{
+  background: #3ea2d3;
+}
+.bg-purple{
+  background: #9f3799;
+}
+.bg-pink{
+  background: #f76fb9;
+}
+.bg-green{
+  background: #5da052;
+}
 
 .form-popup{
   .wrapper-oblock{
@@ -234,6 +252,33 @@ body{
 
 #academy{
   background: #fff4cf;
+  &.academy-class-page{
+    .column{
+      .block{
+        .block-module{
+          height: 385px;
+          @include media-breakpoint-down(xs){
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+  .filter-category{
+    select{
+      background: url(../images/arrow-dropdown.png) no-repeat 90% center;
+      -moz-appearance:none; /* Firefox */
+      -webkit-appearance:none; /* Safari and Chrome */
+      appearance:none;
+      height: 52px;
+      font-size: 12px;
+    }
+  }
+  .btn-search{
+    background: $orange;
+    border: none;
+    height: 52px;
+  }
   h4{
     color: $orange;
     font-size: 40px;
@@ -319,15 +364,7 @@ body{
             }
           }
         }
-        &.bg-orange{
-          background: $orange;
-        }
-        &.bg-yellow{
-          background: #f8ab34;
-        }
-        &.bg-blue{
-          background: #3ea2d3;
-        }
+        
       }
       .block-col{
         height: 387px;
