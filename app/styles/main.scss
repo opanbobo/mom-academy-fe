@@ -107,6 +107,47 @@ body{
   }
 }
 
+
+.detail-class-page-wrapper{
+  .title-page{
+    font-weight: bold;
+    color: #4b4b4b;
+  }
+  .details-info{
+    color: #4b4b4b;
+  }
+  .shortdesc{
+    color: #2a2a2a;
+  }
+  .sidebar-menus{
+    background-color: #333;
+    @include media-breakpoint-up(lg){
+      height: 464px;
+    }
+    ul{
+      padding: 0;
+      margin: 0;
+      @include media-breakpoint-up(md){
+        height: 410px;
+        overflow-y: scroll;
+      }
+      li{
+        list-style: none;
+        font-weight: bold;
+        margin-bottom: 20px;
+        a{
+          color: white;
+          text-decoration: none;
+          &:hover{
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+}
+
+
 .orange-top{
   background-color: $orange;
   .act-link{

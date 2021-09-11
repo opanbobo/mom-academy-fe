@@ -1,0 +1,303 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>mom academy fe</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="/node_modules/slick-carousel/slick/slick.css" type="text/css" />
+    <link rel="stylesheet" href="/node_modules/wow.js/libs/animate.css" type="text/css" />
+    <link rel="stylesheet" href="/node_modules/video.js/dist/video-js.min.css" type="text/css" />
+    <!-- endbuild -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/modernizr.js -->
+    <script src="scripts/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="wrapper">
+      <div id="top-desktop" class="shadow-sm mb-5 bg-white">
+        <div class="orange-top">
+          <div class="container">
+            <div class="row justify-content-end">
+              <div class="col-md-6">
+                <div class="d-flex justify-content-end align-items-center">
+                  <div class="user pr-2"><a data-dismiss="modal" data-toggle="modal" href="#modalLogin"><img src="images/ico-user.png" alt="" class="img-fluid"></a></div>
+                  <div class="act-link pr-2 text-center"><a data-toggle="modal" data-target="#modalRegist">Join MoM</a></div>
+                  <form class="searchbar">
+                    <input type="search" placeholder="Search here" name="search" class="searchbar-input" onkeyup="buttonUp();" required> 
+                    <input type="submit" class="searchbar-submit" value="GO"> 
+                    <span class="searchbar-icon"><i class="fa fa-search" aria-hidden="true"></i></span> 
+                  </form>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+        <div class="after-orange-top">
+          <div class="container">
+            <div class="top-wrapper d-flex py-3">
+              <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" class="img-fluid"></a></div>
+              <div class="menus d-flex align-items-center col-md-11">
+                <ul>
+                  <li class="mr-4 active"><a href="detail-class.html">The Academy</a></li>
+                  <li class="mr-4"><a href="">Get Income</a></li>
+                  <li class="mr-4"><a href="events.html">Events</a></li>
+                  <li class="mr-4"><a href="">Market Day</a></li>
+                  <li class="mr-0"><a href="">About MoM</a></li>
+                </ul>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+      <div id="top-mobile">
+        <nav class="navbar navbar-expand-lg orange-top">
+          <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars text-white"></i>
+          </button>
+          <div class="d-flex justify-content-end align-items-center">
+            <div class="user "><a href="#"><img src="images/ico-user.png" alt="" class="img-fluid"></a></div>
+            <div class="act-link text-center"><a href="#">Join MoM</a></div>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">The Academy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Get Income</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Market Day</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">About MoM</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-danger my-3 my-sm-0 text-white border-white" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div id="academy" class="section pb-5 bg-white shadow-sm academy-class-page">
+        <form action="" class="filter-category mb-4 pt-4 pt-lg-0">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="form-group">
+                      <select class="form-control rounded-pill" id="select-module">
+                        <option select hidden>Cari Class</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6">
+                    <button class="rounded-pill font-weight-bold btn-search text-white w-100"><i class="fa fa-search mr-2" aria-hidden="true"></i> Cari Sekarang</button>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </form>          
+        <div class="detail-class-page-wrapper border-top pt-4">
+          <div class="container">
+            <h1 class="title-page">Content Marketing to Grow Your Business</h1>
+            <p class="details-info mb-4">Widya safitri, CEO Mothers in Mission</p>
+            <div class="row">
+              <div class="col-md-9">
+                <div class="video-wrapper mb-4">
+                  <video class="video-player video-js vjs-default-skin vjs-16-9 vjs-big-play-centered" data-setup='{"fluid": true}' poster="https://vjs.zencdn.net/v/oceans.png" controls>
+                    <source src="//vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
+                    <source src="//vjs.zencdn.net/v/oceans.webm" type='video/webm'>
+                  </video>
+                </div>                
+                <div class="shortdesc">
+                  <p>Kurikulum Job Connector di Purwadhika dirancang khusus mengikuti kebutuhan industri 
+                    dan memudahkan para siswa untuk mendapatkan pekerjaan di bidang digital setelah lulus.
+                    Kurikulum program Job Connector memungkinkan peserta program untuk melanjutkan pendidikan ke tahap selanjutnya untuk mendapatkan gelar sarjana dari universitas internasional</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="sidebar-menus p-4">
+                  <ul>
+                    <li><a href="#">3 Lessons ( 1 Jam 20 Menit )</a></li>
+                    <li><a href="#">Lesson 1  Lorem ipsum dollet</a></li>
+                    <li><a href="#">Lesson 2  Lorem ipsum dollet</a></li>
+                    <li><a href="#">Lesson 3  Lorem ipsum dollet</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="bottom">
+        <div class="container">
+          <div class="d-flex justify-content-between py-4">
+            <div class="block">
+              <img src="images/logo-footer.png" alt="" class="img-fluid">
+            </div>
+            <div class="block">
+              <img src="images/logo-fab.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+
+    <!-- Modal Regist -->
+    <div class="modal fade form-popup" id="modalRegist">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <div class="text-center w-100"><img src="images/logo.png" alt="" class="img-fluid"></div>
+          </div>
+          <div class="modal-body px-md-5">
+            <h4 class="title">Login</h4>
+            <div class="sso mb-3"><img src="images/btn-fb.png" alt="" class="img-fluid"></div>
+            <div class="sso mb-3"><img src="images/btn-google.png" alt="" class="img-fluid"></div>
+            <div class="wrapper-oblock position-relative text-center mb-3">
+              <div class="oblock px-3">atau</div>
+            </div>
+            <form action="" class="form-regist">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Username">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nama Depan">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nama Belakang">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Alamat Email">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nomor Ponsel">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="*Konfirmasi Password">
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    Saya telah <span>membaca dan mengerti</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck2">
+                  <label class="form-check-label" for="gridCheck2">
+                    Saya menerima <span>kebijakan privasi</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck3">
+                  <label class="form-check-label" for="gridCheck3">
+                    Saya tertarik mendapatkan kabar, informasi, diskon dari Mothers on Mission
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <button class="text-uppercase text-white font-weight-bold border-0 w-100 btn-submit-popup" type="submit">Daftar sekarang</button>
+              </div>
+              <div class="form-group">
+                <div data-dismiss="modal" data-toggle="modal" href="#modalLogin">Sudah punya akun? Masuk</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Modal Login -->
+    <div class="modal fade form-popup pb-5" id="modalLogin" >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <div class="text-center w-100"><img src="images/logo.png" alt="" class="img-fluid"></div>
+          </div>
+          <div class="modal-body px-md-5">
+            <h4 class="title">Login</h4>
+            <div class="sso mb-3"><img src="images/btn-fb.png" alt="" class="img-fluid"></div>
+            <div class="sso mb-3"><img src="images/btn-google.png" alt="" class="img-fluid"></div>
+            <div class="wrapper-oblock position-relative text-center mb-3">
+              <div class="oblock px-3">atau</div>
+            </div>
+            <form action="" class="form-regist">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email or Phone Number">
+              </div>
+              <div class="form-group">
+                <button class="text-uppercase text-white font-weight-bold border-0 w-100 btn-submit-popup" type="submit">Next</button>
+              </div>
+              <div class="form-group">
+                <div class="" data-dismiss="modal" data-toggle="modal" href="#modalRegist">Belum punya akun? Yuk Daftar</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+    <!-- build:js scripts/vendor.js -->
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>    
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+    <script type="text/javascript" src="/node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/node_modules/wow.js/dist/wow.min.js"></script>
+    <script type="text/javascript" src="/node_modules/video.js/dist/video.min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
