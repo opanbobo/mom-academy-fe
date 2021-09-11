@@ -109,12 +109,72 @@ body{
 
 
 .detail-class-page-wrapper{
+  .date{
+    background: #3ea2d3;
+    width: 90px;
+    height: 90px;
+    border-radius: 20px;
+    font-size: 23px;
+    line-height: 30px;
+    top: -50px;
+    @include media-breakpoint-down(xs){
+      top: -175px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 10px;
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+  .menu-after-details-info{
+    font-size: 24px;
+    @include media-breakpoint-down(xs){
+      font-size: 16px;
+    }
+    a{
+      color: #3ea2d3;
+      font-weight: 600;
+      text-decoration: none;
+      display: block;
+      padding-right: 20px;
+      position: relative;
+      &:hover{
+        color: $orange;
+      }
+      &:first-child{
+        &::before{
+          position: absolute;
+          content: '';
+          width: 2px;
+          height: 15px;
+          background-color: #212222;
+          right: 0;
+          top: 10px;
+          @include media-breakpoint-down(xs){
+            top: 5px;
+          }
+        }
+      }
+    }
+    .time{
+      color: #212222;
+      opacity: 0.5;
+    }
+  }
   .title-page{
     font-weight: bold;
     color: #4b4b4b;
+    @include media-breakpoint-down(xs){
+      font-size: 20px;
+    }
   }
   .details-info{
     color: #4b4b4b;
+    font-size: 19px;
+    @include media-breakpoint-down(xs){
+      font-size: 14px;
+    }
   }
   .shortdesc{
     color: #2a2a2a;
