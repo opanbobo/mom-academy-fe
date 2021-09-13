@@ -34,6 +34,8 @@ $(document).ready(function() {
     }
  });
 
+ $('.dropdown-toggle').dropdown()
+
   // slider
   $('.multiple-items').slick({
     infinite: true,
