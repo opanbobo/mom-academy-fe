@@ -52,6 +52,15 @@ $(document).ready(function() {
     ]
   });
 
+  $('.multiple-items-1').slick({
+    infinite: true,
+    adaptiveHeight:true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots:true
+  });
+
   $('.multiple-items-2').slick({
     infinite: true,
     slidesToShow: 3,
