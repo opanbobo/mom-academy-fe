@@ -1,0 +1,549 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>mom academy fe</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/vendor.css -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="/node_modules/slick-carousel/slick/slick.css" type="text/css" />
+    <link rel="stylesheet" href="/node_modules/wow.js/libs/animate.css" type="text/css" />
+    <link rel="stylesheet" href="/node_modules/video.js/dist/video-js.min.css" type="text/css" />
+    <!-- endbuild -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/modernizr.js -->
+    <script src="scripts/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="wrapper">
+      <div id="top-desktop">
+        <div class="orange-top">
+          <div class="container">
+            <div class="row justify-content-end">
+              <div class="col-md-6">
+                <div class="d-flex justify-content-end align-items-center">
+                  <div class="user pr-2"><a data-dismiss="modal" data-toggle="modal" href="#modalLogin"><img src="images/ico-user.png" alt="" class="img-fluid"></a></div>
+                  <div class="act-link pr-2 text-center"><a data-toggle="modal" data-target="#modalRegist">Join MoM</a></div>
+                  <form class="searchbar">
+                    <input type="search" placeholder="Search here" name="search" class="searchbar-input" onkeyup="buttonUp();" required> 
+                    <input type="submit" class="searchbar-submit" value="GO"> 
+                    <span class="searchbar-icon"><i class="fa fa-search" aria-hidden="true"></i></span> 
+                  </form>
+                </div>
+              </div>
+            </div>            
+          </div>
+        </div>
+        <div class="after-orange-top">
+          <div class="container">
+            <div class="top-wrapper d-flex py-3">
+              <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" class="img-fluid"></a></div>
+              <div class="menus d-flex align-items-center">
+                <ul>
+                  <li class="mr-4"><a href="detail-class.html">The Academy</a></li>
+                  <li class="mr-4 active"><a href="get-income.html">Get Income</a></li>
+                  <li class="mr-4"><a href="events.html">Events</a></li>
+                  <li class="mr-4"><a href="market.html">Market Day</a></li>
+                  <li class="mr-0"><a href="">About MoM</a></li>
+                </ul>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+      <div id="top-mobile">
+        <nav class="navbar navbar-expand-lg orange-top">
+          <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars text-white"></i>
+          </button>
+          <div class="d-flex justify-content-end align-items-center">
+            <div class="user "><a href="#"><img src="images/ico-user.png" alt="" class="img-fluid"></a></div>
+            <div class="act-link text-center"><a href="#">Join MoM</a></div>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">The Academy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Get Income</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Market Day</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">About MoM</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-danger my-3 my-sm-0 text-white border-white" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div id="banner-get-income" class="section pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 offset-md-6">
+              <h1 class="title mt-4 pt-4 mb-2">Yuk dapatkan penghasilan tambahan melalui Mothers on Mission</h1>
+              <div class="shortdesc">
+                <p class="mb-0">Penasaran gimana caranya dapat penghasilan tambahan yang bisa flexibel? cari tahu caranya</p>
+                <div class="more"><a href="#">disini</a></div>
+              </div>
+              <div class="register-btn mt-4"><a href="#" class="text-uppercase d-flex align-items-center justify-content-center link-gradient rounded-pill text-white text-uppercase">Daftar</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="freelancer" class="section py-5">
+        <div class="container">
+          <h1 class="title">Join Our Freelance Growing Community</h1>
+          <div class="list-freelancer-wrapper">
+            <div class="row">
+              <div class="col-md-6 col-lg-4 mb-3">
+                <div class="block">
+                  <div class="img">
+                    <a href="#" class="d-block position-relative">
+                      <img src="images/img-freelancer.png" alt="" class="img-fluid">
+                      <div class="txt position-absolute p-4">
+                        <h4 class="text-white font-weight-bold text-uppercase">I AM A FREELANCER</h4>
+                      </div>
+                    </a>
+                  </div>                  
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-3">
+                <div class="block">
+                  <div class="img">
+                    <a href="#" class="d-block position-relative">
+                      <img src="images/img-freelancer.png" alt="" class="img-fluid">
+                      <div class="txt position-absolute p-4">
+                        <h4 class="text-white font-weight-bold text-uppercase">I AM A Content Writer</h4>
+                      </div>
+                    </a>
+                  </div>                  
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-3">
+                <div class="block">
+                  <div class="img">
+                    <a href="#" class="d-block position-relative">
+                      <img src="images/img-freelancer.png" alt="" class="img-fluid">
+                      <div class="txt position-absolute p-4">
+                        <h4 class="text-white font-weight-bold text-uppercase">I AM A developer</h4>
+                      </div>
+                    </a>
+                  </div>                  
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-3">
+                <div class="block">
+                  <div class="img">
+                    <a href="#" class="d-block position-relative">
+                      <img src="images/img-freelancer.png" alt="" class="img-fluid">
+                      <div class="txt position-absolute p-4">
+                        <h4 class="text-white font-weight-bold text-uppercase">I AM A graphic designer</h4>
+                      </div>
+                    </a>
+                  </div>                  
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-3">
+                <div class="block">
+                  <div class="img">
+                    <a href="#" class="d-block position-relative">
+                      <img src="images/img-freelancer.png" alt="" class="img-fluid">
+                      <div class="txt position-absolute p-4">
+                        <h4 class="text-white font-weight-bold text-uppercase">I AM A social media specialist</h4>
+                      </div>
+                    </a>
+                  </div>                  
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4 mb-3">
+                <div class="box bg-orange d-flex align-items-center p-4 h-100">
+                  <h4 class="text-white">
+                    Yuk , kenali profesi mereka lebih jauh lagi
+                    <a href="#" class="text-uppercase text-white font-weight-bold mt-4 d-block">DAFTAR SEKARANG</a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="income2" class="section py-5">
+        <div class="container">
+          <div class="d-none d-sm-block">
+            <div class="row mb-5">
+              <div class="col-md-4">
+                <div class="block">
+                  <h4 class="subtitle text-uppercase text-center mb-4 font-weight-bold">mom reseller</h4>
+                  <div class="img mb-4"><img src="images/img-income-1.png" alt="" class="img-fluid"></div>
+                  <div class="list-wrapper">
+                    <ul class="pl-3">
+                      <li>Tentukan fee- mu sendiri</li>
+                      <li>Temukan Klien yang cocok untukmu</li>
+                      <li>Dapatkan income mingguan hingga bulanan</li>
+                    </ul>
+                  </div>
+                  <div class="accordion-wrapper">
+                    <div class="accordion" id="accordion-1">
+                      <div class="card border-top-0">
+                          <div class="card-header" id="headingOne">
+                              <h2 class="mb-0">
+                                  <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fas fa-plus-circle"></i> Jobdesk Mom Reseller</button>									
+                              </h2>
+                          </div>
+                          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion-1">
+                              <div class="card-body">
+                                  <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header" id="headingTwo">
+                              <h2 class="mb-0">
+                                  <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo"><i class="fas fa-plus-circle"></i> Spesifikasi Pekerjaan</button>
+                              </h2>
+                          </div>
+                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion-1">
+                              <div class="card-body">
+                                  <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="block">
+                  <h4 class="subtitle text-uppercase text-center mb-4 font-weight-bold">mom influencer</h4>
+                  <div class="headline mb-4 text-white"><p>Dapatkan penghasilan tambahan dengan menjadi influencer MoM. Klik untuk info lebih lanjut</p></div>
+                  <div class="list-wrapper">
+                    <ul class="pl-3">
+                      <li>Tentukan fee- mu sendiri</li>
+                      <li>Temukan Klien yang cocok untukmu</li>
+                      <li>Dapatkan income mingguan hingga bulanan</li>
+                    </ul>
+                  </div>
+                  <div class="accordion-wrapper">
+                    <div class="accordion" id="accordion-2">
+                      <div class="card border-top-0">
+                          <div class="card-header" id="headingOne-2">
+                              <h2 class="mb-0">
+                                  <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne-2"><i class="fas fa-plus-circle"></i> Jobdesk Mom Reseller</button>									
+                              </h2>
+                          </div>
+                          <div id="collapseOne-2" class="collapse" aria-labelledby="headingOne-2" data-parent="#accordion-2">
+                              <div class="card-body">
+                                  <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header" id="headingTwo-2">
+                              <h2 class="mb-0">
+                                  <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo-2"><i class="fas fa-plus-circle"></i> Spesifikasi Pekerjaan</button>
+                              </h2>
+                          </div>
+                          <div id="collapseTwo-2" class="collapse" aria-labelledby="headingTwo-2" data-parent="#accordion-2">
+                              <div class="card-body">
+                                  <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="block">
+                  <h4 class="subtitle text-uppercase text-center mb-4 font-weight-bold">mom freelancer</h4>
+                  <div class="img mb-4"><img src="images/img-income-2.png" alt="" class="img-fluid"></div>
+                  <div class="list-wrapper">
+                    <ul class="pl-3">
+                      <li>Tentukan fee- mu sendiri</li>
+                      <li>Temukan Klien yang cocok untukmu</li>
+                      <li>Dapatkan income mingguan hingga bulanan</li>
+                    </ul>
+                  </div>
+                  <div class="accordion-wrapper">
+                    <div class="accordion" id="accordion-3">
+                      <div class="card border-top-0">
+                          <div class="card-header" id="headingOne-3">
+                              <h2 class="mb-0">
+                                  <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne-3"><i class="fas fa-plus-circle"></i> Jobdesk Mom Reseller</button>									
+                              </h2>
+                          </div>
+                          <div id="collapseOne-3" class="collapse" aria-labelledby="headingOne-3" data-parent="#accordion-3">
+                              <div class="card-body">
+                                  <p>HTML stands for HyperText Markup Language. HTML is the standard markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header" id="headingTwo-3">
+                              <h2 class="mb-0">
+                                  <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo-3"><i class="fas fa-plus-circle"></i> Spesifikasi Pekerjaan</button>
+                              </h2>
+                          </div>
+                          <div id="collapseTwo-3" class="collapse" aria-labelledby="headingTwo-3" data-parent="#accordion-3">
+                              <div class="card-body">
+                                  <p>Bootstrap is a sleek, intuitive, and powerful front-end framework for faster and easier web development. It is a collection of CSS and HTML conventions. <a href="https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/" target="_blank">Learn more.</a></p>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+          <div class="row d-block d-sm-none">
+            <div class="mobile-tabs mb-5">
+              <div class="container">
+                <ul class="nav nav-pills mb-3" id="testi-tab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active text-uppercase text-white font-weight-bold bg-transparent" id="testi-reseller-tab" data-toggle="pill" href="#testi-reseller" role="tab" aria-controls="testi-reseller" aria-selected="true">mom reseller</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-uppercase text-white font-weight-bold bg-transparent" id="testi-influencer-tab" data-toggle="pill" href="#testi-influencer" role="tab" aria-controls="testi-influencer" aria-selected="false">mom influencer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-uppercase text-white font-weight-bold bg-transparent" id="testi-freelancer-tab" data-toggle="pill" href="#testi-freelancer" role="tab" aria-controls="testi-freelancer" aria-selected="false">mom freelancer</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="testi-tabContent">
+                  <div class="tab-pane fade show active" id="testi-reseller" role="tabpanel" aria-labelledby="testi-reseller-tab">
+                    <div class="img mb-4 text-center"><img src="images/img-income-1.png" alt="" class="img-fluid"></div>
+                    <div class="button-wrapper text-center">
+                      <div class="button d-inline-block">
+                        <a href="#" class="rounded-pill link-gradient font-weight-bold d-flex align-items-center justify-content-center text-uppercase text-white text-center">daftar</a>                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="testi-influencer" role="tabpanel" aria-labelledby="testi-influencer-tab">
+                    <div class="headline mb-4 text-white text-center"><p>Dapatkan penghasilan tambahan dengan menjadi influencer MoM. Klik untuk info lebih lanjut</p></div>
+                    <div class="button-wrapper text-center">
+                      <div class="button d-inline-block">
+                        <a href="#" class="rounded-pill link-gradient font-weight-bold d-flex align-items-center justify-content-center text-uppercase text-white text-center">daftar</a>                      
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="testi-freelancer" role="tabpanel" aria-labelledby="testi-freelancer-tab">
+                    <div class="img mb-4 text-center"><img src="images/img-income-2.png" alt="" class="img-fluid"></div>
+                    <div class="button-wrapper text-center">
+                      <div class="button d-inline-block">
+                        <a href="#" class="rounded-pill link-gradient font-weight-bold d-flex align-items-center justify-content-center text-uppercase text-white text-center">daftar</a>                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="get-intouch" class="section py-5">
+        <div class="container">
+          <h1 class="font-weight-bold mb-4">Get In Touch</h1>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="block bg-white rounded">
+                <form>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Nama</label>
+                    <div class="col-sm-10">
+                      <input type="text" readonly class="form-control-plaintext" id="" >
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control-plaintext" id="" placeholder="">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <textarea name="" id="" rows="3" class="form-control" placeholder="tulis pesanmu"></textarea>
+                  </div>
+                  <div class="button-wrapper mt-4">
+                    <button type="submit" class="btn btn-primary text-uppercase text-white link-gradient rounded-pill border-0 font-weight-bold">Kirim</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="text-column d-flex align-items-center h-100 mt-4 mt-sm-0">
+                <ul>
+                  <li class="wa"><a href="https://web.whatsapp.com/" target="_blank">Admin Moma</a></li>
+                  <li class="location">Jl Lamandau No 10 Kramat Pela, Kebayoran Baru <br>Jakarta Selatan</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="bottom">
+        <div class="container">
+          <div class="d-flex justify-content-between py-4">
+            <div class="block">
+              <img src="images/logo-footer.png" alt="" class="img-fluid">
+            </div>
+            <div class="block">
+              <img src="images/logo-fab.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+
+    <!-- Modal Regist -->
+    <div class="modal fade form-popup" id="modalRegist">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <div class="text-center w-100"><img src="images/logo.png" alt="" class="img-fluid"></div>
+          </div>
+          <div class="modal-body px-md-5">
+            <h4 class="title">Login</h4>
+            <div class="sso mb-3"><img src="images/btn-fb.png" alt="" class="img-fluid"></div>
+            <div class="sso mb-3"><img src="images/btn-google.png" alt="" class="img-fluid"></div>
+            <div class="wrapper-oblock position-relative text-center mb-3">
+              <div class="oblock px-3">atau</div>
+            </div>
+            <form action="" class="form-regist">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Username">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nama Depan">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nama Belakang">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Alamat Email">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Nomor Ponsel">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="*Konfirmasi Password">
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck1">
+                  <label class="form-check-label" for="gridCheck1">
+                    Saya telah <span>membaca dan mengerti</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck2">
+                  <label class="form-check-label" for="gridCheck2">
+                    Saya menerima <span>kebijakan privasi</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck3">
+                  <label class="form-check-label" for="gridCheck3">
+                    Saya tertarik mendapatkan kabar, informasi, diskon dari Mothers on Mission
+                  </label>
+                </div>
+              </div>
+              <div class="form-group">
+                <button class="text-uppercase text-white font-weight-bold border-0 w-100 btn-submit-popup" type="submit">Daftar sekarang</button>
+              </div>
+              <div class="form-group">
+                <div data-dismiss="modal" data-toggle="modal" href="#modalLogin">Sudah punya akun? Masuk</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Modal Login -->
+    <div class="modal fade form-popup pb-5" id="modalLogin" >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <div class="text-center w-100"><img src="images/logo.png" alt="" class="img-fluid"></div>
+          </div>
+          <div class="modal-body px-md-5">
+            <h4 class="title">Login</h4>
+            <div class="sso mb-3"><img src="images/btn-fb.png" alt="" class="img-fluid"></div>
+            <div class="sso mb-3"><img src="images/btn-google.png" alt="" class="img-fluid"></div>
+            <div class="wrapper-oblock position-relative text-center mb-3">
+              <div class="oblock px-3">atau</div>
+            </div>
+            <form action="" class="form-regist">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email or Phone Number">
+              </div>
+              <div class="form-group">
+                <button class="text-uppercase text-white font-weight-bold border-0 w-100 btn-submit-popup" type="submit">Next</button>
+              </div>
+              <div class="form-group">
+                <div class="" data-dismiss="modal" data-toggle="modal" href="#modalRegist">Belum punya akun? Yuk Daftar</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+    <!-- build:js scripts/vendor.js -->
+    <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>    
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
+    <script defer src="/node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"></script>
+    <script type="text/javascript" src="/node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/node_modules/wow.js/dist/wow.min.js"></script>
+    <script type="text/javascript" src="/node_modules/video.js/dist/video.min.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

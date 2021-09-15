@@ -543,6 +543,83 @@ body{
   }
 }
 
+#banner-get-income{
+  background: #e4e1d9 url(../images/banner-get-income.png) no-repeat center;
+  @include media-breakpoint-up(md){
+    min-height: 600px;
+  }
+  .title{
+    font-size: 50px;
+    color: #343434;
+    font-weight: 600;
+  }
+  .shortdesc{
+    font-size: 19px;
+    color: #4f4e4e;
+    a{
+      color: #4f4e4e;
+    }
+  }
+  .register-btn{
+    width: 50%;
+    font-size: 20px;
+    a{      
+      font-weight: 600;
+      height: 60px;
+    }
+  }
+}
+
+#freelancer{
+  .list-freelancer-wrapper{
+    .box{
+      border-radius: 15px;
+      a{
+        text-decoration: underline;
+      }
+    }
+    .block{
+      .img{
+        a{
+          border-radius: 15px;
+          overflow: hidden;
+          @include media-breakpoint-up(md){
+            height: 342px;
+          }
+          &::before{
+            content: '';
+            position: absolute;
+            background: url(../images/shadow-freelancer.png) no-repeat;
+            width: 100%;
+            height: 300px;
+            bottom: -100px;
+            left: 0;
+            right: 0;
+            object-fit: cover;
+          }
+          img{
+            height: 100%;
+            object-fit: cover;
+          }
+          &:hover{
+            .txt{
+              h4{
+                color: $orange !important;
+              }
+            }
+          }
+          .txt{
+            bottom: 0;
+            left: 0;
+            right: 0;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 #about{
   background: url(../images/banner-about.png) no-repeat;
@@ -1328,6 +1405,96 @@ body{
   }
 }
 
+#income2{
+  background: #ececec;
+  .shortdesc{
+    font-size: 28px;
+  }
+  .block{
+    .subtitle{
+      font-size: 35px;
+    }
+    .img{
+      height: 350px;
+    }
+    .headline{
+      background: #de4670;
+      font-size: 30px;
+      height: 350px;
+      width: 332px;
+      border-radius: 25px;
+      padding: 20px 31px;
+      line-height: 38px;
+      display: flex;
+      align-items: center;
+    }
+    .button{
+      font-size: 24px;
+      a{
+        text-decoration: none;
+        width: 319px;
+        height: 76px;
+      }
+    }
+  }
+  .accordion-wrapper{
+    .accordion{
+      .card{
+        background-color: transparent !important;
+        border-left: none;
+        border-right: none;
+      }
+      .card-header{
+        background: none;
+        border: none;
+        padding: 0;
+        h2{
+          button{         
+            border-radius: 0;
+            display: block;
+            outline: none;
+            box-shadow: none;   
+            color: #262626;
+            width: 100%;
+            text-align: left;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .mobile-tabs{
+    #testi-tab{
+      li{
+        position: relative;
+        a{
+          &.active{
+            &::before{
+              position: absolute;
+              content: '';
+              width: 20%;
+              height: 3px;
+              background-color: #fff;
+              bottom: 0px;
+              left: 0;
+              right: 0;
+              margin: auto;
+            }
+          }
+        }
+      }
+    }
+    .tab-pane{
+      .button{
+        a{
+          text-decoration: none;
+          width: 319px;
+          height: 76px;
+        }
+      }
+    }
+  }
+}
 
 #trusted{
   background: #ffe8f2;
