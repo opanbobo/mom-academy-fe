@@ -1553,7 +1553,7 @@ body{
       position: absolute;
       content: '';
       width: 50%;
-      height: 70%;
+      height: 220px;
       left: 0;
       background-color: #fff;
       @include media-breakpoint-down(xs){
@@ -1567,7 +1567,7 @@ body{
       position: absolute;
       content: '';
       width: 50%;
-      height: 70%;
+      height: 220px;
       right: 0;
       background-color: #fff;
       @include media-breakpoint-down(xs){

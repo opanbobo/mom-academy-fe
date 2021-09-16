@@ -78,15 +78,15 @@ $(document).ready(function() {
 
 //accordion
 // Add minus icon for collapse element which is open by default
-$(".collapse.show").each(function(){
-    $(this).prev(".card-header").find(".svg-inline--fa").addClass("fa-minus-circle").removeClass("fa-plus-circle");
+$('.collapse.show').each(function(){
+    $(this).prev('.card-header').find('.svg-inline--fa').addClass('fa-minus-circle').removeClass('fa-plus-circle');
 });
 
 // Toggle plus minus icon on show hide of collapse element
-$(".collapse").on('show.bs.collapse', function(){
-    $(this).prev(".card-header").find(".svg-inline--fa").removeClass("fa-plus-circle").addClass("fa-minus-circle");
+$('.collapse').on('show.bs.collapse', function(){
+    $(this).prev('.card-header').find('.svg-inline--fa').removeClass('fa-plus-circle').addClass('fa-minus-circle');
 }).on('hide.bs.collapse', function(){
-    $(this).prev(".card-header").find(".svg-inline--fa").removeClass("fa-minus-circle").addClass("fa-plus-circle");
+    $(this).prev('.card-header').find('.svg-inline--fa').removeClass('fa-minus-circle').addClass('fa-plus-circle');
 });
 
 
