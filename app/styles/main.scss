@@ -29,7 +29,7 @@ body{
 }
 
 .mobile-column{
-  @include media-breakpoint-down(xs){
+  @include media-breakpoint-down(md){
     flex-direction: column;
   }
 }
@@ -201,6 +201,9 @@ body{
         list-style: none;
         font-weight: bold;
         margin-bottom: 20px;
+        @include media-breakpoint-down(md){
+          font-size: 13px;
+        }
         a{
           color: white;
           text-decoration: none;
@@ -217,6 +220,9 @@ body{
   .submenux{
     ul{
       margin: 0;
+      @include media-breakpoint-down(md){
+        padding-left: 0;
+      }
       li{
         list-style: none;
         float: left;
@@ -252,6 +258,11 @@ body{
   .btn-search{
     width: 60%;
     height: 50px;
+    span{
+      @include media-breakpoint-between(sm,md){
+        display: none;
+      }
+    }
   }
   .sortmenus{
     p{
@@ -263,7 +274,11 @@ body{
         float: left;
         margin-right: 20px;
         padding: 10px 20px;
-        border-radius: 10px;
+        border-radius: 10px;        
+        @include media-breakpoint-down(md){
+          padding: 10px;
+          margin-right: 0;
+        }
         &.active{
           background: $orange;
           color: white;
@@ -379,6 +394,9 @@ body{
             list-style: none;
             float: left;
             color: #fbd005;
+            @include media-breakpoint-down(md){
+              font-size: 12px;
+            }
           }
         }
       }
@@ -396,6 +414,9 @@ body{
       button{
         height: 55px;
         font-size: 19px;
+        @include media-breakpoint-down(md){
+          font-size: 15px;
+        }
       }
       .chat{
         button{
@@ -648,6 +669,9 @@ body{
     background-size: cover;
     background-position: 30% 50px;
   }
+  @include media-breakpoint-between(md, lg){
+    background-position: -500px 0;
+  }
   .block{
     background: rgba(255, 255, 255, 0.88);
   }
@@ -681,6 +705,11 @@ body{
     background: $orange;
     border: none;
     height: 52px;
+    span{
+      @include media-breakpoint-between(sm,md){
+        display: none;
+      }
+    }
   }
   h4{
     color: $orange;
@@ -1246,7 +1275,7 @@ body{
     display: block;    
     &.product-off-the-day{
       .block-col{
-        height: 453px;
+        height: 465px;
         overflow: hidden;
         border-radius: 50px;        
       }
@@ -1327,6 +1356,9 @@ body{
   background-size: cover;
   .shortdesc{
     font-size: 28px;
+    @include media-breakpoint-down(md){
+      font-size: 20px;
+    }
   }
   .block{
     .subtitle{
@@ -1334,6 +1366,9 @@ body{
     }
     .img{
       height: 350px;
+      @include media-breakpoint-down(md){
+        height: 100%;
+      }
     }
     .headline{
       background: #de4670;
@@ -1345,6 +1380,12 @@ body{
       line-height: 38px;
       display: flex;
       align-items: center;
+      @include media-breakpoint-down(md){
+        height: 100%;
+        width: 100%;
+        font-size: 18px;
+        line-height: 20px;
+      }
     }
     .button{
       font-size: 24px;
@@ -1352,6 +1393,9 @@ body{
         text-decoration: none;
         width: 319px;
         height: 76px;
+        @include media-breakpoint-down(md){
+          width: 100%;
+        }
       }
     }
   }
@@ -1398,9 +1442,9 @@ body{
         font-size: 30px;
         line-height: 35px;
         font-style: italic;
-        @include media-breakpoint-down(xs){
-          font-size: 22px;
-          line-height: 30px;
+        @include media-breakpoint-down(md){
+          font-size: 15px;
+          line-height: 23px;
         }
         span{
           font-style: normal;
@@ -1410,7 +1454,7 @@ body{
         overflow: hidden;
         width: 160px;
         height: 176px;
-        @include media-breakpoint-down(xs){
+        @include media-breakpoint-down(md){
           display: flex;
           align-items: center;
           justify-content: center;

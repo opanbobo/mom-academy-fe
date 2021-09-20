@@ -43,7 +43,14 @@ $(document).ready(function() {
     slidesToScroll: 1,
     responsive: [
         {
-            breakpoint: 480,
+            breakpoint: 786,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 568,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
