@@ -1562,11 +1562,17 @@ body{
 
 #step-wrapper{
   .block{
+    @include media-breakpoint-down(md){
+      text-align: center;
+    }
     .img{
       overflow: hidden;
       width: 231px;
       height: 231px;
       border-radius: 50%;
+      @include media-breakpoint-down(md){
+        display: inline-block;
+      }
     }
     h4{
       color: #1f80af;
@@ -1600,9 +1606,8 @@ body{
       height: 220px;
       left: 0;
       background-color: #fff;
-      @include media-breakpoint-down(xs){
-        width: 100%;
-        height: 60%;
+      @include media-breakpoint-down(sm){
+        display: none;
       }
     }
   }
@@ -1614,14 +1619,16 @@ body{
       height: 220px;
       right: 0;
       background-color: #fff;
-      @include media-breakpoint-down(xs){
-        width: 100%;
-        height: 60%;
+      @include media-breakpoint-down(sm){
+        display: none;
       }
     }
   }
   .column{
     font-size: 23px;
+    @include media-breakpoint-down(md){
+      text-align: center;
+    }
   }
 }
 
