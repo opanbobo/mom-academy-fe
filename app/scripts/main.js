@@ -34,6 +34,11 @@ $(document).ready(function() {
     }
  });
 
+$('.nav-tabs').on('click', 'li', function() {
+    $('.nav-tabs li.active').removeClass('active');
+    $(this).addClass('active');
+});
+
  $('.dropdown-toggle').dropdown()
 
   // slider
