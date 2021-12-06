@@ -29,7 +29,7 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div id="wrapper">
-      <div id="top-desktop" class="shadow-sm mb-5 bg-white">
+      <div id="top-desktop">
         <div class="orange-top">
           <div class="container">
             <div class="row justify-content-end">
@@ -51,10 +51,11 @@
           <div class="container">
             <div class="top-wrapper d-flex py-3">
               <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" class="img-fluid"></a></div>
-              <div class="menus d-flex align-items-center col-md-11">
+              <div class="menus d-flex align-items-center">
                 <ul>
                   <li class="mr-4"><a href="about-us.html">About Us</a></li>
-                  <li class="mr-4 active"><a href="academy-class.html">The Academy</a></li>
+                  <li class="mr-4 active"><a href="about-us.html">About Us</a></li>
+                  <li class="mr-4"><a href="academy-class.html">The Academy</a></li>
                   <li class="mr-4"><a href="get-income.html">Get Income</a></li>
                   <li class="mr-4"><a href="events.html">Events</a></li>
                   <li class="mr-4"><a href="article.html">Article</a></li>
@@ -77,10 +78,10 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
+              <li class="nav-item ">
                 <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link text-white" href="about-us.html">About Us</a>
               </li>
               <li class="nav-item">
@@ -106,58 +107,88 @@
           </div>
         </nav>
       </div>
-      <div id="academy" class="section pb-5 bg-white shadow-sm academy-class-page">
-        <form action="" class="filter-category mb-4 pt-4 pt-lg-0">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-md-10">
-                <div class="row">
-                  <div class="col-lg-3 col-sm-6">
-                    <div class="form-group">
-                      <select class="form-control rounded-pill" id="select-module">
-                        <option select hidden>Cari Class</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                    <button class="rounded-pill font-weight-bold btn-search text-white w-100"><i class="fa fa-search mr-2" aria-hidden="true"></i> Cari Sekarang</button>
-                  </div>
-                </div>
-              </div>              
-            </div>
-          </div>
-        </form>          
-        <div class="detail-class-page-wrapper border-top pt-4">
-          <div class="container">
-            <h1 class="title-page">Content Marketing to Grow Your Business</h1>
-            <p class="details-info mb-4">Widya safitri, CEO Mothers in Mission</p>
-            <div class="row">
-              <div class="col-md-9">
-                <div class="video-wrapper mb-4">
-                  <video class="video-player video-js vjs-default-skin vjs-16-9 vjs-big-play-centered" data-setup='{"fluid": true}' poster="https://vjs.zencdn.net/v/oceans.png" controls>
-                    <source src="//vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
-                    <source src="//vjs.zencdn.net/v/oceans.webm" type='video/webm'>
-                  </video>
-                </div>                
+      <div id="about" class="section pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-5">
+              <h1 class="title mt-4 pt-4 mb-2 d-block d-sm-none">About <span class="d-block">Mom Academy</span></h1>
+              <div class="block p-3 rounded my-sm-5">
+                <h1 class="title mb-4 d-none d-sm-block">About <span class="d-block">Mom Academy</span></h1>
                 <div class="shortdesc">
-                  <p>Kurikulum Job Connector di Purwadhika dirancang khusus mengikuti kebutuhan industri 
-                    dan memudahkan para siswa untuk mendapatkan pekerjaan di bidang digital setelah lulus.
-                    Kurikulum program Job Connector memungkinkan peserta program untuk melanjutkan pendidikan ke tahap selanjutnya untuk mendapatkan gelar sarjana dari universitas internasional</p>
+                  <p class="mb-0">MoM Academy (MoMA) adalah komunitas perempuan terutama para mom yang senang mencari ilmu, berbagi ilmu, serta pastinya mendapatkan penghasilan. Dengan misi “ Mom harus pintar, produktif, dan bahagia” komunitas di bawah naungan Mothers on Mission ini berkembang pesat hanya dalam satu tahun terakhir.</p>
+                  <p class="mb-0">Saat ini MoMA sudah memiliki lebih dari 3000 anggota yang tersebar di seluruh Indonesia serta Luar Negeri dan terbagi dalam 15 whatsapp group yang dikelola oleh para pengurus regional masing-masing area.</p>
                 </div>
               </div>
-              <div class="col-md-3">
-                <div class="sidebar-menus p-4">
-                  <ul>
-                    <li><a href="#">3 Lessons ( 1 Jam 20 Menit )</a></li>
-                    <li><a href="#">Lesson 1  Lorem ipsum dollet</a></li>
-                    <li><a href="#">Lesson 2  Lorem ipsum dollet</a></li>
-                    <li><a href="#">Lesson 3  Lorem ipsum dollet</a></li>
-                  </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="academy" class="section py-5">
+        <div class="container">
+          <h1 class="title text-center">Moms Behind Mom Academy</h1>
+        </div>
+      </div>
+      <div id="expert" class="section py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="sliders-wrapper">
+                <div class="slider multiple-items">
+                  <div class="block text-center">
+                    <div class="img d-inline-block"><img src="images/img-people-1.png" alt="" class="img-fluid"></div>
+                    <div class="after-img text-white mt-2">
+                      <div class="name">Widya Safitri</div>
+                      <div class="position">Bussiness Coach</div>
+                      <div class="d-flex align-items-center justify-content-center sosmed-profile my-4">
+                        <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="wa"><i class="fab fa-whatsapp"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block text-center">
+                    <div class="img d-inline-block"><img src="images/img-people-2.png" alt="" class="img-fluid"></div>
+                    <div class="after-img text-white mt-2">
+                      <div class="name">Farisah Sabrina</div>
+                      <div class="position">Financial Expert</div>
+                      <div class="d-flex align-items-center justify-content-center sosmed-profile my-4">
+                        <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="wa"><i class="fab fa-whatsapp"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block text-center">
+                    <div class="img d-inline-block"><img src="images/img-people-3.png" alt="" class="img-fluid"></div>
+                    <div class="after-img text-white mt-2">
+                      <div class="name">Restiana Tobing</div>
+                      <div class="position">Digital Marketing</div>
+                      <div class="d-flex align-items-center justify-content-center sosmed-profile my-4">
+                        <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="wa"><i class="fab fa-whatsapp"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block text-center">
+                    <div class="img d-inline-block"><img src="images/img-people-4.png" alt="" class="img-fluid"></div>
+                    <div class="after-img text-white mt-2">
+                      <div class="name">Widya Safitri</div>
+                      <div class="position">Bussiness Coach</div>
+                      <div class="d-flex align-items-center justify-content-center sosmed-profile my-4">
+                        <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="wa"><i class="fab fa-whatsapp"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block text-center">
+                    <div class="img d-inline-block"><img src="images/img-people-1.png" alt="" class="img-fluid"></div>
+                    <div class="after-img text-white mt-2">
+                      <div class="name">Widya Safitri</div>
+                      <div class="position">Bussiness Coach</div>
+                      <div class="d-flex align-items-center justify-content-center sosmed-profile my-4">
+                        <a href="#" class="ig"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="wa"><i class="fab fa-whatsapp"></i></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
