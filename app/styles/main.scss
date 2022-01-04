@@ -1178,6 +1178,16 @@ body{
 #expert{
   background: url(../images/blue-shape.jpg) no-repeat;
   background-size: cover;
+  .multiple-items{
+    .img{
+      img{
+        width: 164px;
+        height: 164px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
   .sliders-wrapper{
     .slick-prev {
       position: absolute;
